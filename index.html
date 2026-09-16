@@ -1,0 +1,161 @@
+```html
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio Doriana Riabuszenki — montaż wideo i content na social media.">
+  <title>Dorian Riabuszenko — Montaż wideo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0c0b09;--raised:#141210;--ink:#ece7dd;--dim:#a49c8d;--faint:#6b6459;--rule:#2b2822;--red:#ff4a33;--teal:#4fd9c7}*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:inherit}.mono,.nav,.eyebrow,.label,.count,.tag,.contact,.meta{font-family:"JetBrains Mono",monospace}.noise{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.05;mix-blend-mode:overlay}.nav{position:fixed;inset:0 0 auto;z-index:40;display:flex;justify-content:space-between;padding:1.4rem clamp(1.2rem,4vw,3rem);font-size:.78rem;color:var(--dim);mix-blend-mode:difference}.nav a{text-decoration:none}.nav a:hover,.nav a:focus-visible{color:var(--ink)}
+    .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--rule)}.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 25%;filter:grayscale(1) contrast(1.08)}.scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,11,9,.75),rgba(12,11,9,.15) 30%,rgba(12,11,9,.25) 60%,rgba(12,11,9,.96)),linear-gradient(90deg,rgba(12,11,9,.55),transparent 45%)}.hero-content{position:relative;z-index:2;width:100%;padding:0 clamp(1.2rem,4vw,3rem) clamp(2.4rem,6vw,4.5rem)}.eyebrow{display:flex;align-items:center;gap:.6rem;margin-bottom:1.1rem;font-size:.8rem;color:var(--teal)}.dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 8px var(--red);animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}h1{margin:0;font-size:clamp(3rem,11vw,8rem);line-height:.92;letter-spacing:-.02em}.role{font-size:clamp(1rem,2vw,1.3rem);color:var(--dim)}.scroll{position:absolute;right:clamp(1.2rem,4vw,3rem);bottom:clamp(1.4rem,3vw,2.2rem);z-index:3;writing-mode:vertical-rl;font:.72rem "JetBrains Mono",monospace;color:var(--faint)}
+    .intro,.tools,footer,.work{max-width:1200px;margin:auto;padding-left:clamp(1.2rem,4vw,3rem);padding-right:clamp(1.2rem,4vw,3rem)}.intro,.tools{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(1.5rem,4vw,3rem);padding-top:clamp(3.5rem,8vw,6.5rem);padding-bottom:clamp(3.5rem,8vw,6.5rem);border-bottom:1px solid var(--rule)}.label{font-size:.78rem;color:var(--faint)}.intro p{margin:0;max-width:62ch;font-size:clamp(1.15rem,2.4vw,1.6rem);line-height:1.5}.work{padding-top:clamp(2rem,5vw,3rem)}.work-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:1.4rem}.work h2{margin:0;font-size:clamp(1.6rem,3.4vw,2.4rem)}.count{font-size:.8rem;color:var(--faint)}
+    .featured{position:relative;aspect-ratio:16/8;margin-bottom:clamp(1.6rem,4vw,2.6rem);overflow:hidden;border:1px solid var(--rule);border-radius:4px;background:#000}.poster{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(1.2rem,3vw,2.2rem);border:0;text-align:left;color:var(--ink);cursor:pointer;background:repeating-linear-gradient(100deg,rgba(79,217,199,.05) 0 1px,transparent 1px 68px),radial-gradient(ellipse at 30% 20%,rgba(255,74,51,.16),transparent 55%),linear-gradient(160deg,#1a1712,#0c0b09 70%)}.poster-eyebrow{font:.78rem "JetBrains Mono",monospace;color:var(--teal)}.poster-title{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:700}.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-55%);display:grid;place-items:center;width:clamp(58px,8vw,84px);height:clamp(58px,8vw,84px);border:1px solid rgba(236,231,221,.35);border-radius:50%;background:rgba(12,11,9,.55);transition:.25s}.play svg{width:34%;fill:var(--ink)}.poster:hover .play,.poster:focus-visible .play{transform:translate(-50%,-55%) scale(1.08);background:var(--red);border-color:var(--red)}.featured iframe,.clip iframe{width:100%;height:100%;border:0}.reel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,2.4vw,1.6rem);padding-bottom:clamp(1.6rem,4vw,2.6rem)}.clip{position:relative;aspect-ratio:16/9;min-width:0;overflow:hidden;padding:0;border:1px solid var(--rule);border-radius:4px;color:var(--ink);text-align:left;cursor:pointer;background:var(--raised);isolation:isolate}.clip::after{content:"";position:absolute;inset:35% 0 0;z-index:1;pointer-events:none;background:linear-gradient(transparent,rgba(12,11,9,.94))}.clip-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.06);transition:transform .4s,filter .4s}.clip-meta{position:absolute;inset:auto 0 0;z-index:2;display:grid;grid-template-columns:auto 1fr;align-items:end;gap:.7rem;padding:clamp(.8rem,2vw,1.2rem)}.index{font-size:.72rem;color:var(--teal)}.clip-title{font-size:clamp(1rem,2vw,1.3rem);font-weight:600}.clip .play{z-index:2;width:clamp(46px,6vw,62px);height:clamp(46px,6vw,62px)}.clip:hover .clip-thumb,.clip:focus-visible .clip-thumb{transform:scale(1.035);filter:saturate(1) contrast(1.06)}.clip:hover .play,.clip:focus-visible .play{transform:translate(-50%,-55%) scale(1.08);background:var(--red);border-color:var(--red)}.clip:focus-visible,.poster:focus-visible{outline:2px solid var(--teal);outline-offset:3px}.clip.is-playing::after,.clip.is-playing .clip-thumb,.clip.is-playing .clip-meta,.clip.is-playing .play{display:none}
+    .tools{padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem)}.tools-list{display:flex;flex-wrap:wrap;gap:.6rem}.tools-list span{padding:.42rem .9rem;border:1px solid var(--rule);border-radius:999px;font:.82rem "JetBrains Mono",monospace;color:var(--dim)}footer{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(2.5rem,5vw,3.5rem)}footer h3{max-width:14ch;margin:0 0 .6rem;font-size:clamp(1.8rem,5vw,3.2rem)}.contact,.meta{display:flex;flex-direction:column;gap:.4rem}.contact a{text-decoration:none;border-bottom:1px solid var(--rule)}.contact a:hover{color:var(--teal);border-color:var(--teal)}.meta{font-size:.75rem;color:var(--faint);text-align:right}
+    @media(max-width:640px){.intro,.tools{grid-template-columns:1fr}.reel{grid-template-columns:1fr}.scroll{display:none}footer{flex-direction:column;align-items:flex-start}.meta{text-align:left}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <svg class="noise" aria-hidden="true"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#noise)"/></svg>
+
+  <nav class="nav" aria-label="Główna nawigacja">
+    <span>DR</span>
+    <a href="#kontakt">kontakt</a>
+  </nav>
+
+  <header class="hero">
+    <img class="hero-img" src="/img/dorian-riabuszenko.jpg" alt="Dorian Riabuszenko, portret czarno-biały">
+    <div class="scrim"></div>
+    <div class="hero-content">
+      <div class="eyebrow"><span class="dot"></span> montaż wideo — poznań</div>
+      <h1>Dorian<br>Riabuszenko</h1>
+      <p class="role">Montażysta wideo i twórca treści na social media.</p>
+    </div>
+    <div class="scroll">przewiń, żeby zobaczyć realizacje</div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="label">00 / o mnie</div>
+      <p>Montuję wideo i tworzę content na social media, od dynamicznych rolek z eventów i koncertów po materiały promocyjne dla marek. Lubię łączyć rytm, muzykę i estetykę z przemyślanym montażem. Ukończyłem studia magisterskie z produkcji audiowizualnej na UAM i obecnie szukam ciekawych projektów, przy których mogę się rozwijać.</p>
+    </section>
+
+    <section class="work">
+      <div class="work-head">
+        <h2>Wybrane realizacje</h2>
+        <div class="count">10 pozycji</div>
+      </div>
+
+      <div class="featured" id="featured">
+        <button class="poster" id="poster" aria-label="Odtwórz showreel 2026">
+          <span class="poster-eyebrow">showreel</span>
+          <span class="poster-title">Showreel 2026</span>
+          <span class="play">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="reel" id="reel"></div>
+    </section>
+
+    <section class="tools">
+      <div class="label">01 / narzędzia</div>
+      <div class="tools-list">
+        <span>Premiere Pro</span>
+        <span>After Effects</span>
+        <span>Photoshop</span>
+        <span>Lightroom</span>
+        <span>FL Studio</span>
+        <span>Ableton Live</span>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <div>
+      <h3>Porozmawiajmy o projekcie.</h3>
+      <div class="contact">
+        <a href="mailto:dorianriabuszenko1@gmail.com">dorianriabuszenko1@gmail.com</a>
+        <a href="tel:+48517969458">+48 517 969 458</a>
+      </div>
+    </div>
+    <div class="meta">
+      <span>Poznań, Polska</span>
+      <span>dostępny do współpracy</span>
+    </div>
+  </footer>
+
+  <script>
+    const clips = [
+      ['00','OSHEE — kampania reklamowa','OyYJhauyNXI'],
+      ['01','OSHEE — kampania rolka','wJp3Zcwjlzs'],
+      ['02','Paluch — aftermovie','mzHzSOXj_6w'],
+      ['03','Sanah — aftermovie','tPxiFoLX7e0'],
+      ['04','Aftermovie event biegowy','repbgAKJzJY'],
+      ['05','Młody West — rolka koncertowa','auFdut10If0'],
+      ['06','Fizjoterapia uroginekologiczna','6CCQ72p48M8'],
+      ['07','Położna - rolka','AdhX3hCJq-U'],
+      ['08','Enea Stadion — social media rolka','8DubEYzOpqI'],
+      ['09','Enea Stadion — event rolka','j-P62q_uacI']
+    ];
+
+    const playIcon = '<span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>';
+
+    const reel = document.querySelector('#reel');
+
+    clips.forEach(([i,title,id]) => {
+      const button = document.createElement('button');
+
+      button.className = 'clip';
+      button.type = 'button';
+      button.setAttribute('aria-label', `Odtwórz: ${title}`);
+
+      button.innerHTML = `
+        <img
+          class="clip-thumb"
+          src="https://i.ytimg.com/vi/${id}/hqdefault.jpg"
+          alt=""
+          loading="lazy"
+        >
+        <span class="clip-meta">
+          <span class="index mono">${i}</span>
+          <span class="clip-title">${title}</span>
+        </span>
+        ${playIcon}
+      `;
+
+      button.addEventListener('click', () => {
+        const frame = document.createElement('iframe');
+
+        frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        frame.title = title;
+        frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        frame.allowFullscreen = true;
+
+        button.classList.add('is-playing');
+        button.replaceChildren(frame);
+      });
+
+      reel.append(button);
+    });
+
+    document.querySelector('#poster').addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+
+      frame.src = 'https://www.youtube-nocookie.com/embed/hHIX3pozirE?autoplay=1&rel=0';
+      frame.title = 'Showreel 2026';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+
+      document.querySelector('#featured').replaceChildren(frame);
+    });
+  </script>
+</body>
+</html>
+```
